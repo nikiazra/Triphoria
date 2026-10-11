@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Triphoria - Tour & Travel</title>
+<style>
+:root{--p:#0a6ea8;--pd:#08436b;--pl:#e6f3fa;--bg:#fff;--tx:#10283a;--mu:#5b7183;--bd:#d8e6ef;--cd:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a26;--tx:#e8f2f8;--mu:#9bb3c4;--bd:#1d3447;--cd:#112636;--pl:#12303f}}
+:root[data-theme="dark"]{--bg:#0b1a26;--tx:#e8f2f8;--mu:#9bb3c4;--bd:#1d3447;--cd:#112636;--pl:#12303f}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+a{color:var(--p)}.w{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:9}
+.nv{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:22px;color:var(--p);text-decoration:none;letter-spacing:.5px}
+nav{display:flex;gap:4px}nav a{padding:8px 11px;border-radius:8px;color:var(--tx);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover,nav a.on{background:var(--pl);color:var(--p)}
+#bg{display:none;background:none;border:1px solid var(--bd);border-radius:8px;font-size:20px;padding:4px 10px;color:var(--tx)}
+@media(max-width:860px){#bg{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;padding:10px 20px;border-bottom:1px solid var(--bd)}nav.o{display:flex}}
+.hero{background:linear-gradient(180deg,#0a5d94,var(--p) 55%,#4fb6e0);color:#fff;padding:80px 0 130px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 14px;max-width:720px}.hero p{max-width:600px;font-size:18px;opacity:.92}
+.hero svg{position:absolute;bottom:-1px;left:0;width:100%;height:60px}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:#fff;color:var(--pd);font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:15px;margin:6px 8px 0 0}
+.btn.s{background:var(--p);color:#fff}.btn.o{background:transparent;border:2px solid #fff;color:#fff}
+.pg{background:linear-gradient(135deg,var(--pd),var(--p));color:#fff;padding:48px 0}.pg h1{margin:0;font-size:clamp(26px,5vw,38px)}.pg p{margin:6px 0 0;opacity:.9}
+section{padding:56px 0}h2{font-size:28px;margin:0 0 8px;color:var(--pd)}@media(prefers-color-scheme:dark){h2{color:#7cc7ec}}
+.sub{color:var(--mu);margin:0 0 28px}
+.g{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:22px;box-shadow:0 2px 10px rgba(10,110,168,.06)}
+.c h3{margin:8px 0 6px;font-size:18px}.c p{margin:0;color:var(--mu);font-size:15px}.ic{font-size:30px}
+.st{background:var(--pl)}.st .n{font-size:34px;font-weight:800;color:var(--p)}.st div{text-align:center}
+.av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--p),#2aa3d6);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin:0 auto 10px}
+.tc{text-align:center}.rl{color:var(--p);font-weight:600;font-size:13px;text-transform:uppercase}
+.pr{color:var(--p);font-weight:700;margin-top:10px!important}
+.tag{display:inline-block;background:var(--pl);color:var(--p);padding:4px 12px;border-radius:999px;font-size:13px;margin:4px 4px 0 0}
+.org{display:flex;flex-direction:column;align-items:center;gap:20px}.org .row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}.org .c{width:230px}
+.org .top{border-color:var(--p);border-width:2px}
+input,textarea,select{width:100%;padding:11px 13px;border:1px solid var(--bd);border-radius:10px;font:inherit;background:var(--bg);color:var(--tx);margin:4px 0 12px}
+label{font-weight:600;font-size:14px}
+footer{background:var(--pd);color:#cfe6f3;padding:36px 0;font-size:14px}footer a{color:#fff}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.adm{padding:24px 0}.adm .sec{border:1px solid var(--bd);border-radius:12px;margin:12px 0;background:var(--cd)}
+.adm summary{padding:14px 18px;font-weight:700;cursor:pointer;color:var(--p)}.adm .in{padding:0 18px 18px}
+.it{border:1px dashed var(--bd);border-radius:10px;padding:12px;margin:10px 0;position:relative}
+.del{float:right;background:#d9534f;color:#fff;border:0;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:12px}
+.add{background:var(--p);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+.map{height:220px;border-radius:14px;background:linear-gradient(135deg,var(--pl),#bfe0f1);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;text-align:center;padding:16px}
+.two{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.ok{background:#e6f6ea;color:#1b6b34;padding:8px 12px;border-radius:8px;display:inline-block}
+h1,h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:.3px}
+.bgfx{position:fixed;inset:0;z-index:-1;overflow:hidden;background:linear-gradient(160deg,var(--bg),var(--pl) 55%,var(--bg))}.bgfx i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;background:#5db8e6;animation:flt 20s ease-in-out infinite alternate}
+.bgfx i:nth-child(1){width:380px;height:380px;top:-80px;left:-80px}.bgfx i:nth-child(2){width:300px;height:300px;top:40%;right:-60px;background:#a6dcf3;animation-duration:26s}.bgfx i:nth-child(3){width:340px;height:340px;bottom:-100px;left:30%;background:#2a8fc9;opacity:.25;animation-duration:32s}
+@keyframes flt{to{transform:translate(60px,80px) scale(1.2)}}@media(prefers-reduced-motion:reduce){.bgfx i{animation:none}}
+header{background:color-mix(in srgb,var(--bg) 82%,transparent)!important;backdrop-filter:blur(10px)}
+.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}.dc img{display:block;width:100%;height:180px;object-fit:cover}
+.hero .w{position:relative;z-index:2}.hs{position:absolute;inset:0;overflow:hidden;z-index:1}.hs>svg:first-of-type{position:absolute;inset:0;width:100%;height:100%}
+.hs span{position:absolute;font-size:44px;opacity:.85}.hs .cl{animation:drift 60s linear infinite}.hs .pl{top:22%;animation:fly 20s linear infinite;font-size:36px}.hs .bt{bottom:62px;left:18%;animation:bob 4s ease-in-out infinite;font-size:36px}
+.hs .wv{position:absolute;left:0;width:200%;height:90px;animation:wv 14s linear infinite}
+@keyframes drift{from{left:-10%}to{left:110%}}@keyframes fly{from{left:-8%;top:30%}to{left:108%;top:6%}}@keyframes bob{50%{transform:translateY(-8px) rotate(4deg)}}@keyframes wv{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.hs *{animation:none!important}}
+.pg{position:relative;overflow:hidden}.pg .w{position:relative}.pg::after{content:"🌴 ⛰️ 🏝️ ✈️";position:absolute;right:16px;bottom:4px;font-size:38px;opacity:.22;letter-spacing:10px}
+.dc{border-radius:16px;overflow:hidden;border:1px solid var(--bd);background:var(--cd);box-shadow:0 4px 14px rgba(10,110,168,.1)}.dc .im{overflow:hidden}.dc svg{display:block;width:100%;height:auto;transition:transform .6s}.dc:hover svg{transform:scale(1.08)}.dc .b{padding:14px 18px}.dc h3{margin:0}.dc small{color:var(--p);font-weight:600}.dc p{margin:6px 0 0;color:var(--mu);font-size:14px}
+</style></head><body>
+<div class="bgfx"><i></i><i></i><i></i></div>
+<header><div class="w nv"><a class="logo" href="#/">✈ Triphoria</a><button id="bg" aria-label="Menu">☰</button><nav id="nv"></nav></div></header>
+<main id="app"></main>
+<footer><div class="w" id="ft"></div></footer>
+<a class="wa" id="wab" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script id="main">
+const KEY='triphoria_v1',DEF={
+b:{nama:"Triphoria",tagline:"Wujudkan perjalanan impian Anda bersama biro perjalanan wisata terpercaya",wa:"6281234567890",email:"info@triphoria.id",telp:"+62 812 3456 7890",alamat:"Jl. Pemuda No. 123, Semarang, Jawa Tengah 50132",cabang:"Cabang: Yogyakarta & Jakarta",maps:"Jl. Pemuda Semarang"},
+home:{judul:"Jelajahi Dunia dengan Nyaman & Aman",sub:"Triphoria menghadirkan paket tour domestik dan internasional, tiket, hotel, hingga perjalanan korporat dengan pelayanan profesional.",
+unggulan:[{ic:"🛡️",t:"Terpercaya & Berizin",d:"Biro perjalanan resmi dengan izin usaha dan keanggotaan asosiasi."},{ic:"💰",t:"Harga Transparan",d:"Tanpa biaya tersembunyi, paket dapat disesuaikan budget."},{ic:"🧭",t:"Tour Leader Berpengalaman",d:"Pendamping profesional yang siap membantu 24 jam."},{ic:"🤝",t:"Layanan Personal",d:"Itinerary custom sesuai kebutuhan keluarga atau perusahaan."}],
+stat:[{n:"5.000+",l:"Wisatawan Puas"},{n:"120+",l:"Destinasi"},{n:"8 Th",l:"Pengalaman"},{n:"4.9/5",l:"Rating Pelanggan"}]},
+about:{sejarah:"Triphoria berdiri pada 2018 dari kecintaan para pendirinya terhadap dunia perjalanan. Berawal dari layanan tour kecil di Jawa Tengah, kini kami melayani ribuan wisatawan ke berbagai destinasi di Indonesia dan mancanegara.",visi:"Menjadi biro perjalanan wisata pilihan utama yang dipercaya di Indonesia dengan pengalaman perjalanan berkualitas.",misi:["Memberikan layanan perjalanan yang aman, nyaman, dan transparan","Menghadirkan paket wisata inovatif dan berkelanjutan","Mengutamakan kepuasan dan keselamatan pelanggan","Mendukung pariwisata lokal dan pemberdayaan masyarakat"],
+capai:["Izin Usaha Biro Perjalanan Wisata (Kemenparekraf)","Anggota ASITA","Travel Agent Terbaik Regional 2023","Rekanan resmi maskapai & jaringan hotel nasional"]},
+layanan:[{ic:"🏝️",t:"Paket Tour Domestik",d:"Bali, Lombok, Labuan Bajo, Raja Ampat, Yogyakarta dan destinasi nusantara lainnya.",h:"Mulai Rp 1.500.000"},{ic:"🌏",t:"Paket Tour Internasional",d:"Jepang, Korea, Eropa, Turki, Singapura, Malaysia, dan lainnya.",h:"Mulai Rp 8.900.000"},{ic:"🕋",t:"Umroh & Wisata Religi",d:"Perjalanan ibadah dengan pembimbing berpengalaman.",h:"Hubungi kami"},{ic:"🏢",t:"Corporate Trip & MICE",d:"Gathering, incentive trip, dan outing perusahaan.",h:"Sesuai kebutuhan"},{ic:"✈️",t:"Tiket & Hotel",d:"Pemesanan tiket pesawat, kereta, dan akomodasi.",h:"Harga terbaik"},{ic:"📄",t:"Visa & Dokumen",d:"Bantuan pengurusan visa dan dokumen perjalanan.",h:"Mulai Rp 350.000"}],
+porto:{klien:["PT Maju Bersama","Bank Sejahtera","Universitas Nusantara","Klinik Sehat Sentosa","CV Kreasi Mandiri","Yayasan Cahaya Bangsa"],testi:[{n:"Rina Wulandari",r:"Ibu Rumah Tangga, Semarang",q:"Liburan keluarga ke Bali sangat lancar. Tour leader ramah dan itinerary rapi."},{n:"Budi Santoso",r:"HRD PT Maju Bersama",q:"Outing kantor 150 peserta berjalan tertib. Sangat profesional."},{n:"Dewi Anggraini",r:"Mahasiswi",q:"Trip Jepang paling berkesan, harga jelas dan tanpa biaya tambahan."}]},
+blog:[{t:"7 Tips Liburan Hemat ke Bali",tgl:"10 Okt 2026",d:"Atur waktu, pilih akomodasi, dan manfaatkan paket tour agar liburan tetap nyaman di kantong."},{t:"Persiapan Visa Jepang: Panduan Lengkap",tgl:"2 Okt 2026",d:"Dokumen apa saja yang perlu disiapkan dan berapa lama prosesnya."},{t:"Triphoria Hadirkan Paket Labuan Bajo Terbaru",tgl:"20 Sep 2026",d:"Open trip 4 hari 3 malam dengan kapal phinisi dan snorkeling di spot terbaik."}],
+pimpin:[{j:"CEO",n:"Andi Pratama",b:"Pendiri & pemimpin visi strategis perusahaan."},{j:"COO",n:"Sari Kusuma",b:"Mengelola operasional tour dan kualitas layanan."},{j:"CTO",n:"Reza Mahendra",b:"Memimpin teknologi, sistem booking, dan website."},{j:"CMO",n:"Maya Putri",b:"Memimpin pemasaran, brand, dan kemitraan."},{j:"CFO",n:"Hendra Wijaya",b:"Mengelola keuangan dan tata kelola perusahaan."}],
+dest:[{nama:"Bali",lokasi:"Indonesia",tipe:"beach",d:"Pantai, budaya, dan sunset yang memukau."},{nama:"Bromo",lokasi:"Jawa Timur",tipe:"mountain",d:"Sunrise di lautan pasir dan kawah ikonik."},{nama:"Borobudur",lokasi:"Yogyakarta",tipe:"temple",d:"Candi Buddha terbesar dunia, warisan UNESCO."},{nama:"Tokyo",lokasi:"Jepang",tipe:"city",d:"Kota modern dengan budaya, kuliner, dan sakura."}],
+admin:{user:"admin",pass:"triphoria123"}};
+const SEED=window.__SEED||DEF;let D;try{D=JSON.parse(localStorage.getItem(KEY))||structuredClone(SEED)}catch(e){D=structuredClone(SEED)}
+D.dest=D.dest||structuredClone(DEF.dest);D.dest.forEach(d=>{d.gambar??=''});D.blog.forEach(b=>{b.isi??=b.d;b.gambar??=''});
+D.media=D.media||{judul:'Video Perjalanan Kami',sub:'Rasakan keseruan perjalanan bersama Triphoria.',heroVideo:'',videoUrl:''};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){alert('Penyimpanan penuh. Gunakan file yang lebih kecil.');return false}return true};
+function scene(t,i){const u='g'+i,sk=(a,b)=>`<defs><linearGradient id="${u}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="300" height="180" fill="url(#${u})"/>`,sun='<circle cx="240" cy="42" r="22" fill="#ffd35a"/>';let c;
+if(t==='mountain')c=sk('#8fd3f4','#f1fbff')+sun+'<polygon points="0,150 80,55 160,150" fill="#4a6f8a"/><polygon points="60,150 160,30 260,150" fill="#35566f"/><polygon points="160,30 143,62 160,55 175,65" fill="#fff"/><polygon points="80,55 68,76 80,70 92,78" fill="#fff"/><polygon points="200,150 260,85 300,150" fill="#4a6f8a"/><rect y="140" width="300" height="40" fill="#3d9b5f"/>';
+else if(t==='temple')c=sk('#ffb86b','#ffeacc')+'<circle cx="150" cy="100" r="36" fill="#ffe08a"/><polygon points="50,150 250,150 228,125 72,125" fill="#5b4a42"/><polygon points="85,125 215,125 200,100 100,100" fill="#6b574d"/><polygon points="110,100 190,100 178,78 122,78" fill="#7a6458"/><polygon points="150,36 135,78 165,78" fill="#5b4a42"/><rect y="150" width="300" height="30" fill="#2f6b3f"/>';
+else if(t==='city')c=sk('#6fb8e8','#e0f2fb')+sun+[[15,70,32],[52,95,34],[92,60,28],[125,115,38],[168,80,30],[204,100,34],[244,65,40]].map(([x,h,w])=>`<rect x="${x}" y="${160-h}" width="${w}" height="${h}" fill="#274b66"/>`+[0,1,2,3].map(j=>`<rect x="${x+6}" y="${170-h+j*20}" width="5" height="7" fill="#ffe08a"/><rect x="${x+w-12}" y="${170-h+j*20}" width="5" height="7" fill="#ffe08a"/>`).join('')).join('')+'<rect y="160" width="300" height="20" fill="#1d3a50"/>';
+else c=sk('#5ec3ee','#e3f6ff')+sun+'<rect y="105" width="300" height="75" fill="#1a8cc4"/><path d="M0 125q25-10 50 0t50 0 50 0 50 0 50 0 50 0M0 148q25-10 50 0t50 0 50 0 50 0 50 0 50 0" stroke="#8fd8f5" stroke-width="3" fill="none"/><path d="M0 180V158Q80 142 140 162T230 166Q270 152 300 162V180z" fill="#f5deb3"/><path d="M70 162Q72 122 80 96" stroke="#7a5230" stroke-width="5" fill="none"/><g fill="#2e9e5b"><ellipse cx="66" cy="96" rx="22" ry="7" transform="rotate(-25 66 96)"/><ellipse cx="94" cy="96" rx="22" ry="7" transform="rotate(25 94 96)"/><ellipse cx="80" cy="88" rx="20" ry="7"/></g>';
+return `<svg viewBox="0 0 300 180" role="img" aria-label="ilustrasi destinasi">${c}</svg>`}
+function heroBg(){const w='M0 40Q180 0 360 40T720 40T1080 40T1440 40T1800 40T2160 40T2520 40T2880 40V90H0z';return `<div class="hs">${D.media.heroVideo?`<video class="hv" ${vsrc(D.media.heroVideo)} autoplay muted loop playsinline></video>`:''}<svg viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="sg"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient></defs></svg></div>`}
+const E=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+const M=[['','Beranda'],['about','Tentang Kami'],['layanan','Layanan'],['portofolio','Portofolio'],['blog','Artikel'],['pimpinan','Pimpinan'],['kontak','Kontak']];
+const hd=(t,s)=>`<div class="pg"><div class="w"><h1>${E(t)}</h1><p>${E(s)}</p></div></div>`;
+const wa=t=>`https://wa.me/${D.b.wa}?text=${encodeURIComponent(t||'Halo Triphoria, saya ingin bertanya tentang paket tour.')}`;
+const ini=n=>n.split(' ').map(x=>x[0]).slice(0,2).join('');
+const P={
+'':()=>`<div class="hero">${heroBg()}<div class="w"><h1>${E(D.home.judul)}</h1><p>${E(D.home.sub)}</p><a class="btn" href="#/layanan">Lihat Layanan</a><a class="btn o" href="${wa()}" target="_blank">Konsultasi Gratis</a></div><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30C240 70 480 0 720 30s480 40 720 0V60H0z" fill="var(--bg)"/></svg></div>
+<section><div class="w"><h2>Mengapa Memilih Triphoria?</h2><p class="sub">${E(D.b.tagline)}</p><div class="g">${D.home.unggulan.map(x=>`<div class="c"><div class="ic">${E(x.ic)}</div><h3>${E(x.t)}</h3><p>${E(x.d)}</p></div>`).join('')}</div></div></section>
+<section><div class="w"><h2>Destinasi Populer</h2><p class="sub">Pilihan favorit wisatawan Triphoria — dari pantai, gunung, hingga kota dunia.</p><div class="g">${D.dest.map((x,i)=>`<div class="dc"><div class="im">${x.gambar?`<img src="${x.gambar}" alt="${E(x.nama)}">`:scene(x.tipe,i)}</div><div class="b"><small>${E(x.lokasi)}</small><h3>${E(x.nama)}</h3><p>${E(x.d)}</p></div></div>`).join('')}</div></div></section>
+<section><div class="w"><h2>${E(D.media.judul)}</h2><p class="sub">${E(D.media.sub)}</p>${D.media.videoUrl?`<video controls playsinline ${vsrc(D.media.videoUrl)} style="width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(10,110,168,.25)"></video>`:`<div class="map" style="height:260px"><div style="font-size:48px">▶️</div><b>Video perjalanan segera hadir</b></div>`}</div></section>
+<section class="st"><div class="w g">${D.home.stat.map(x=>`<div><div class="n">${E(x.n)}</div>${E(x.l)}</div>`).join('')}</div></section>
+<section><div class="w"><h2>Layanan Unggulan</h2><p class="sub">Solusi perjalanan lengkap untuk individu, keluarga, dan perusahaan.</p><div class="g">${D.layanan.slice(0,3).map(x=>`<div class="c"><div class="ic">${E(x.ic)}</div><h3>${E(x.t)}</h3><p>${E(x.d)}</p></div>`).join('')}</div><p><a class="btn s" href="#/layanan">Semua Layanan</a></p></div></section>`,
+about:()=>hd('Tentang Kami','Mengenal Triphoria lebih dekat')+`<section><div class="w two"><div><h2>Sejarah Perusahaan</h2><p>${E(D.about.sejarah)}</p></div><div class="c"><h3>🎯 Visi</h3><p>${E(D.about.visi)}</p><h3>🚀 Misi</h3>${D.about.misi.map(m=>`<p>• ${E(m)}</p>`).join('')}</div></div></section>
+<section class="st"><div class="w"><h2>Pencapaian & Sertifikasi</h2><div class="g">${D.about.capai.map(x=>`<div class="c"><div class="ic">🏆</div><p>${E(x)}</p></div>`).join('')}</div></div></section>
+<section><div class="w"><h2>Tim & Manajemen</h2><p class="sub">Dipimpin profesional berpengalaman di industri pariwisata.</p><a class="btn s" href="#/pimpinan">Lihat Struktur Pimpinan</a></div></section>`,
+layanan:()=>hd('Layanan Kami','Produk dan layanan perjalanan Triphoria')+`<section><div class="w g">${D.layanan.map(x=>`<div class="c"><div class="ic">${E(x.ic)}</div><h3>${E(x.t)}</h3><p>${E(x.d)}</p><p class="pr">${E(x.h)}</p><p><a href="${wa('Halo Triphoria, saya tertarik dengan '+x.t)}" target="_blank">Tanya via WhatsApp →</a></p></div>`).join('')}</div></section>`,
+portofolio:()=>hd('Portofolio','Klien dan testimoni yang mempercayai kami')+`<section><div class="w"><h2>Klien Kami</h2><p>${D.porto.klien.map(k=>`<span class="tag">${E(k)}</span>`).join('')}</p></div></section><section class="st"><div class="w"><h2>Testimoni Pelanggan</h2><br><div class="g">${D.porto.testi.map(t=>`<div class="c"><p>⭐⭐⭐⭐⭐</p><p style="color:var(--tx)">“${E(t.q)}”</p><p class="pr">${E(t.n)}</p><p>${E(t.r)}</p></div>`).join('')}</div></div></section>`,
+blog:a=>{const x=D.blog[a];if(x)return hd(x.t,x.tgl)+`<section><div class="w" style="max-width:780px">${x.gambar?`<img src="${x.gambar}" style="width:100%;border-radius:14px;margin-bottom:20px" alt="">`:''}${E(x.isi||x.d).split(/\n+/).map(p=>`<p>${p}</p>`).join('')}<p><a class="btn s" href="#/blog">← Semua Artikel</a> <a class="btn s" target="_blank" href="${wa('Halo Triphoria, saya baca artikel: '+x.t)}">Tanya via WhatsApp</a></p></div></section>`;
+return hd('Artikel & Berita','Tips perjalanan dan kabar terbaru')+`<section><div class="w g">${D.blog.map((x,i)=>`<a class="dc" href="#/blog/${i}" style="text-decoration:none;color:inherit"><div class="im">${x.gambar?`<img src="${x.gambar}" alt="">`:scene(['beach','mountain','temple','city'][i%4],i+10)}</div><div class="b"><small>${E(x.tgl)}</small><h3>${E(x.t)}</h3><p>${E(x.d)}</p><p class="pr">Baca selengkapnya →</p></div></a>`).join('')}</div></section>`},
+pimpinan:()=>{const[a,...r]=D.pimpin,c=x=>`<div class="c tc ${x===a?'top':''}"><div class="av">${E(ini(x.n))}</div><div class="rl">${E(x.j)}</div><h3>${E(x.n)}</h3><p>${E(x.b)}</p></div>`;return hd('Struktur Pimpinan','Jajaran direksi Triphoria')+`<section><div class="w org">${c(a)}<div class="row">${r.map(c).join('')}</div></div></section>`},
+kontak:()=>hd('Hubungi Kami','Kami siap membantu merencanakan perjalanan Anda')+`<section><div class="w two"><div><h2>Informasi Kontak</h2><p>📍 ${E(D.b.alamat)}<br>${E(D.b.cabang)}</p><p>📞 ${E(D.b.telp)}<br>✉️ <a href="mailto:${E(D.b.email)}">${E(D.b.email)}</a></p><p><a class="btn s" href="${wa()}" target="_blank">💬 WhatsApp Business</a></p><div class="map"><div style="font-size:34px">🗺️</div><b>${E(D.b.maps)}</b><a class="btn s" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(D.b.maps)}">Buka di Google Maps</a></div></div>
+<div class="c"><h3>Kirim Pesan</h3><label>Nama</label><input id="fn"><label>Email / No. HP</label><input id="fe"><label>Pesan</label><textarea id="fm" rows="4"></textarea><button class="btn s" onclick="sendF()">Kirim via WhatsApp</button><div id="fo"></div></div></div></section>`
+};
+function sendF(){const n=$('fn').value.trim(),m=$('fm').value.trim();if(!n||!m){$('fo').innerHTML='<p>Mohon isi nama dan pesan.</p>';return}window.open(wa(`Halo Triphoria, saya ${n} (${$('fe').value}). ${m}`),'_blank');$('fo').innerHTML='<span class="ok">Membuka WhatsApp...</span>'}
+/* Admin */
+const lg=()=>sessionStorage.getItem('adm')==='1';
+const gp=p=>p.split('.').reduce((o,k)=>o[k],D);
+const par=p=>{const k=p.split('.'),l=k.pop();return[k.length?gp(k.join('.')):D,l]};
+const blank=v=>Array.isArray(v)?[]:typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,blank(x)])):'';
+const ed=(v,p)=>Array.isArray(v)?`<div>${v.map((x,i)=>`<div class="it"><button class="del" data-del="${p}.${i}">Hapus</button>${ed(x,p+'.'+i)}</div>`).join('')}<button class="add" data-add="${p}">+ Tambah</button></div>`:v&&typeof v==='object'?Object.keys(v).map(k=>`<label>${k}</label>${ed(v[k],p+'.'+k)}`).join(''):/(^|\.)(gambar|heroVideo|videoUrl)$/.test(p)?up(v,p):(String(v).length>70?`<textarea rows="3" data-p="${p}">${E(v)}</textarea>`:`<input data-p="${p}" value="${E(v)}">`);
+const idb=()=>new Promise((res,rej)=>{const r=indexedDB.open('triphoria',1);r.onupgradeneeded=()=>r.result.createObjectStore('v');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)});
+const idbPut=async f=>{const d=await idb(),k='v'+Date.now();await new Promise((res,rej)=>{const t=d.transaction('v','readwrite');t.objectStore('v').put(f,k);t.oncomplete=res;t.onerror=t.onabort=()=>rej(t.error)});return k};
+const idbGet=async k=>{const d=await idb();return new Promise((res,rej)=>{const q=d.transaction('v').objectStore('v').get(k);q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error)})};
+const vsrc=s=>s&&s.startsWith('idb:')?`data-idb="${s.slice(4)}"`:`src="${s}"`;
+function hydrate(){document.querySelectorAll('video[data-idb]').forEach(async v=>{try{const b=await idbGet(v.dataset.idb);if(b)v.src=URL.createObjectURL(b)}catch(e){}})}
+function exportSite(){let vid=false;const seed=JSON.parse(JSON.stringify(D),(k,v)=>{if(typeof v==='string'&&v.startsWith('idb:')){vid=true;return ''}return v});
+let html='<!DOCTYPE html>\n<html lang="id">'+document.documentElement.innerHTML+'</html>';
+html=html.replace(/<script id="seed">[\s\S]*?<\/script>/,'').replace('<script id="main">',()=>'<script id="seed">window.__SEED='+JSON.stringify(seed).replace(/</g,'\\u003c')+'<\/script><script id="main">');
+const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([html],{type:'text/html'}));a.download='index.html';document.body.appendChild(a);a.click();a.remove();
+alert('File index.html sudah diunduh. Seret file itu ke Netlify (Deploys → drag & drop) agar semua pengunjung melihat perubahan.'+(vid?'\n\nCatatan: video yang diunggah tidak ikut terbawa (hanya tersimpan di browser ini), jadi perlu dipasang ulang.':''))}
+const up=(v,p)=>`<div><input type="file" accept="${/(heroVideo|videoUrl)$/.test(p)?'video/*':'image/*'}" data-up="${p}">${v?`<small>✔ terpasang</small> <button class="del" style="float:none" data-clr="${p}">Hapus</button>`:'<small>kosong (maks video 10 MB)</small>'}</div>`;
+document.addEventListener('change',e=>{const p=e.target.dataset?.up,f=e.target.files?.[0];if(!p||!f)return;const k=[...document.querySelectorAll('details')].map(d=>d.open);const done=s=>{const[o,l]=par(p),old=o[l];o[l]=s;if(!save()){o[l]=old;return}route();rest(k)};
+if(f.type.startsWith('video')){if(f.size>10*1024*1024){alert('Video maksimal 10 MB.');return}idbPut(f).then(k=>done('idb:'+k)).catch(()=>alert('Gagal menyimpan video. Ruang penyimpanan browser mungkin penuh.'))}else{const im=new Image;im.onload=()=>{const s=Math.min(1,1100/im.width),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);done(c.toDataURL('image/jpeg',.75))};im.src=URL.createObjectURL(f)}});
+const NAMA={media:'Video Utama & Banner',b:'Info Perusahaan & Kontak',home:'Beranda',about:'Tentang Kami',layanan:'Layanan',porto:'Portofolio & Testimoni',blog:'Artikel / Berita',dest:'Destinasi Populer (tipe: beach / mountain / temple / city)',pimpin:'Struktur Pimpinan',admin:'Akun Admin'};
+function admin(){if(!lg())return hd('Login Admin','Khusus pengelola website')+`<section><div class="w" style="max-width:420px"><div class="c"><label>Username</label><input id="lu"><label>Password</label><input id="lp" type="password"><button class="btn s" onclick="doLogin()">Masuk</button><div id="le" style="color:#d9534f"></div></div></div></section>`;
+return hd('Panel Admin','Ubah isi website — tersimpan otomatis')+`<div class="w adm"><p><small>Setelah selesai mengedit, klik "Simpan & Unduh Website", lalu upload file index.html ke Netlify agar tampil ke semua pengunjung.</small></p><p><button class="add" onclick="exportSite()">⬇ Simpan & Unduh Website</button> <button class="add" onclick="sessionStorage.removeItem('adm');route()">Logout</button> <button class="del" style="float:none;padding:8px 14px" onclick="if(confirm('Kembalikan semua data ke awal?')){D=structuredClone(DEF);save();route()}">Reset Data</button></p>${Object.keys(NAMA).map(k=>`<details class="sec"><summary>${NAMA[k]}</summary><div class="in">${ed(D[k],k)}</div></details>`).join('')}</div>`}
+function doLogin(){if($('lu').value===D.admin.user&&$('lp').value===D.admin.pass){sessionStorage.setItem('adm','1');route()}else $('le').textContent='Username atau password salah.'}
+document.addEventListener('input',e=>{const p=e.target.dataset?.p;if(p){const[o,k]=par(p);o[k]=e.target.value;save();chrome()}});
+document.addEventListener('click',e=>{const t=e.target,op=document.querySelectorAll('details[open]');const keep=[...document.querySelectorAll('details')].map(d=>d.open);
+if(t.dataset.clr){const[o,k]=par(t.dataset.clr);o[k]='';save();route();rest(keep)}
+if(t.dataset.del){const[o,k]=par(t.dataset.del);o.splice(+k,1);save();route();rest(keep)}
+if(t.dataset.add){const a=gp(t.dataset.add);a.push(a.length?blank(a[0]):'');save();route();rest(keep)}});
+const rest=k=>document.querySelectorAll('details').forEach((d,i)=>d.open=k[i]);
+function chrome(){$('nv').innerHTML=M.map(([h,l])=>`<a href="#/${h}" data-h="${h}">${l}</a>`).join('');$('wab').href=wa();
+$('ft').innerHTML=`<b style="color:#fff;font-size:18px">✈ ${E(D.b.nama)}</b><p>${E(D.b.tagline)}</p><p>📍 ${E(D.b.alamat)} · ✉️ ${E(D.b.email)} · 📞 ${E(D.b.telp)}</p><p>© ${new Date().getFullYear()} ${E(D.b.nama)}. Hak cipta dilindungi. · <a href="#/admin">Admin</a></p>`}
+function route(){const h=(location.hash.replace(/^#\/?/,'')||'');const [b,arg]=h.split('/');const pg=b==='admin'?admin:P[b]||P[''];$('app').innerHTML=pg(arg);hydrate();chrome();$('nv').classList.remove('o');
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.h===b));document.title=(b?M.find(m=>m[0]===b)?.[1]||'Admin':'Beranda')+' | Triphoria';scrollTo(0,0)}
+$('bg').onclick=()=>$('nv').classList.toggle('o');
+addEventListener('hashchange',route);route();
+</script></body></html>
